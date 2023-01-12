@@ -5,8 +5,18 @@ import { RouterView } from "vue-router";
 <template>
   <header>
     <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li>Works</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
   </header>
-  <main></main>
+  <main>
+    <p>ここはHomeページです</p>
+    <router-link to="/src/views/AboutView.vue">Aboutへ</router-link>
+  </main>
   <RouterView />
 </template>
 
