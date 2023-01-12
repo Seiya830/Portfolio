@@ -1,6 +1,9 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>ここはaboutページです</h1>
+    <router-link to="/src/App.vue">Homeへ</router-link>
   </div>
 </template>
 
