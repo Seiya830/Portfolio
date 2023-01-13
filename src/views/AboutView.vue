@@ -3,7 +3,7 @@
 <template>
   <div class="about">
     <h1>ここはaboutページです</h1>
-    <router-link to="/src/App.vue">Homeへ</router-link>
+    <router-link to="/src/views/HomeView.vue">Homeへ</router-link>
   </div>
 </template>
 
