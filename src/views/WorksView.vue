@@ -3,16 +3,8 @@
 <template>
   <div class="works">
     <h1>ここはworksページです</h1>
-    <router-link to="/views/HomeView.vue">Homeへ</router-link>
+    <router-link to="/">Homeへ</router-link>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<style></style>
