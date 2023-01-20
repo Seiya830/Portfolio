@@ -1,23 +1,18 @@
-<!-- <nav v-if="isOpen" class="nav-menu">
-  <li>
-    <router-link to="/works">Works</router-link>
-  </li>
-  <li>
-    <router-link to="/about">About</router-link>
-  </li>
-  <li>
-    <router-link to="/contact">Contact</router-link>
-  </li>
-</nav> -->
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+
+export default defineComponent({
+  setup() {
+    const open = ref(false);
+    return { open };
+  },
+});
+</script>
 
 <template>
   <div>
-    <span :class="{ 'is-open': isOpen.value }" @click="toggle">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </span>
-    <div v-if="isOpen.value" class="menu">
+    <button @click="open = !open">Toggle menu</button>
+    <nav v-if="open">
       <ul>
         <li>
           <router-link to="/works">Works</router-link>
@@ -29,28 +24,14 @@
           <router-link to="/contact">Contact</router-link>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 </template>
 
-<script lang="ts">
-import { ref } from "vue";
-
-interface State {
-  isOpen: Ref<boolean>;
+<style lang="scss">
+li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
 }
-
-export default {
-  setup() {
-    const state: State = {
-      isOpen: ref(false),
-    };
-
-    function toggle() {
-      state.isOpen.value = !state.isOpen.value;
-    }
-
-    return { ...state, toggle };
-  },
-};
-</script>
+</style>
