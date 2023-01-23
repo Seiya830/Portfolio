@@ -16,7 +16,7 @@ export default defineComponent({
       <span></span>
       <span></span>
     </button>
-    <nav v-if="open">
+    <nav @click="open = !open" :class="{ open: open }" class="nav-content">
       <ul>
         <li>
           <router-link to="/works">Works</router-link>
@@ -33,10 +33,36 @@ export default defineComponent({
 </template>
 
 <style lang="scss">
-li {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 30px;
+.nav-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  z-index: 999;
+  display: none;
+  &.open {
+    display: block;
+    animation: slide-in 0.4s ease-in-out forwards;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+ul {
+  margin-top: 120px;
+
+  li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 .hamburger {
@@ -49,7 +75,7 @@ li {
   background-color: gray;
   vertical-align: top;
   border: none;
-  z-index: 999;
+  z-index: 9999;
   cursor: pointer;
 
   span {
@@ -74,6 +100,7 @@ li {
   }
 
   &.open {
+    background-color: aqua;
     span {
       &:nth-child(1) {
         transform: rotate(45deg);
