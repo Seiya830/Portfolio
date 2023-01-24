@@ -33,6 +33,7 @@ export default defineComponent({
 </template>
 
 <style lang="scss">
+@import "../assets/scss/mixin";
 .nav-content {
   position: fixed;
   top: 0;
@@ -42,6 +43,11 @@ export default defineComponent({
   background-color: aqua;
   z-index: 999;
   display: none;
+
+  @include pc {
+    display: block;
+  }
+
   &.open {
     display: block;
     animation: slide-in 0.4s ease-in-out forwards;
