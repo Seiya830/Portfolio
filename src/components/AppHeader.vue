@@ -45,12 +45,17 @@ export default defineComponent({
   display: none;
 
   @include pc {
-    display: block;
+    display: flex;
+    background-color: transparent;
   }
 
   &.open {
     display: block;
     animation: slide-in 0.4s ease-in-out forwards;
+
+    @include pc {
+      display: none;
+    }
   }
 }
 @keyframes slide-in {
@@ -64,10 +69,22 @@ export default defineComponent({
 ul {
   margin-top: 120px;
 
+  @include pc {
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
   li {
     list-style: none;
     text-align: center;
     margin-bottom: 30px;
+
+    @include pc {
+      margin-top: 30px;
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -84,6 +101,10 @@ ul {
   z-index: 9999;
   cursor: pointer;
 
+  @include pc {
+    display: none;
+  }
+
   span {
     position: absolute;
     top: 20px;
@@ -93,6 +114,10 @@ ul {
     height: 2px;
     background-color: black;
     transition: ease 0.4s;
+
+    @include pc {
+      display: none;
+    }
   }
 
   :nth-child(1) {
