@@ -16,7 +16,7 @@ export default defineComponent({
       <span></span>
       <span></span>
     </button>
-    <nav @click="open = !open" :class="{ open: open }" class="nav-content">
+    <nav :class="{ open: open }" class="nav-content">
       <ul>
         <li>
           <router-link to="/works">Works</router-link>
@@ -47,15 +47,12 @@ export default defineComponent({
   @include pc {
     display: flex;
     background-color: transparent;
+    height: 60px;
   }
 
   &.open {
     display: block;
     animation: slide-in 0.4s ease-in-out forwards;
-
-    @include pc {
-      display: none;
-    }
   }
 }
 @keyframes slide-in {
@@ -114,10 +111,6 @@ ul {
     height: 2px;
     background-color: black;
     transition: ease 0.4s;
-
-    @include pc {
-      display: none;
-    }
   }
 
   :nth-child(1) {
@@ -132,6 +125,7 @@ ul {
 
   &.open {
     background-color: aqua;
+
     span {
       &:nth-child(1) {
         transform: rotate(45deg);
