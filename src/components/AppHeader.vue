@@ -17,6 +17,7 @@ export default defineComponent({
       <span></span>
     </button>
     <nav :class="{ open: open }" class="nav-content">
+      <h1><a href="/">Home</a></h1>
       <ul>
         <li>
           <router-link to="/works">Works</router-link>
