@@ -10,31 +10,49 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <button @click="open = !open" :class="{ open: open }" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav :class="{ open: open }" class="nav-content">
-      <h1><a href="/">Home</a></h1>
-      <ul>
-        <li>
-          <router-link to="/works">Works</router-link>
-        </li>
-        <li>
-          <router-link to="/about">About</router-link>
-        </li>
-        <li>
-          <router-link to="/contact">Contact</router-link>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <h1 class="home">
+    <a href="/">Home</a>
+  </h1>
+  <button @click="open = !open" :class="{ open: open }" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav :class="{ open: open }" class="nav-content">
+    <ul>
+      <li>
+        <router-link to="/works">Works</router-link>
+      </li>
+      <li>
+        <router-link to="/about">About</router-link>
+      </li>
+      <li>
+        <router-link to="/contact">Contact</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="scss">
 @import "../assets/scss/mixin";
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+
+  @include pc {
+    z-index: 9999;
+  }
+}
+
 .nav-content {
   position: fixed;
   top: 0;
