@@ -65,6 +65,7 @@ a {
 
   @include pc {
     display: flex;
+    position: static;
     background-color: transparent;
     height: 60px;
   }
