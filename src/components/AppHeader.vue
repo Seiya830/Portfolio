@@ -21,13 +21,19 @@ export default defineComponent({
   <nav :class="{ open: open }" class="nav-content">
     <ul>
       <li>
-        <router-link to="/works">Works</router-link>
+        <router-link @click.prevent="open = false" to="/works"
+          >Works</router-link
+        >
       </li>
       <li>
-        <router-link to="/about">About</router-link>
+        <router-link @click.prevent="open = false" to="/about"
+          >About</router-link
+        >
       </li>
       <li>
-        <router-link to="/contact">Contact</router-link>
+        <router-link @click.prevent="open = false" to="/contact"
+          >Contact</router-link
+        >
       </li>
     </ul>
   </nav>
