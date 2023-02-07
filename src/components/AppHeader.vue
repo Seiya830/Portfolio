@@ -38,12 +38,12 @@ export default defineComponent({
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .home {
-  position: fixed;
-  top: 20px;
-  left: 40px;
+  margin-top: 16px;
+  margin-left: 24px;
   display: inline-block;
   width: auto;
   height: auto;
@@ -65,7 +65,6 @@ a {
 
   @include pc {
     display: flex;
-    position: static;
     background-color: transparent;
     height: 60px;
   }
