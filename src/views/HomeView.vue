@@ -9,7 +9,7 @@
 
 <style lang="scss">
 .top-title {
-  height: 500px;
+  height: 400px;
   font-size: 38px;
   position: relative;
 
