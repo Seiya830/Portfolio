@@ -19,18 +19,18 @@ export default defineComponent({
     <span></span>
   </button>
   <nav :class="{ open: open }" class="nav-content">
-    <ul>
-      <li>
+    <ul class="nav-list">
+      <li class="nav-item">
         <router-link @click.prevent="open = false" to="/works"
           >Works</router-link
         >
       </li>
-      <li>
+      <li class="nav-item">
         <router-link @click.prevent="open = false" to="/about"
           >About</router-link
         >
       </li>
-      <li>
+      <li class="nav-item">
         <router-link @click.prevent="open = false" to="/contact"
           >Contact</router-link
         >
@@ -45,6 +45,10 @@ export default defineComponent({
 a {
   text-decoration: none;
   color: black;
+}
+
+li {
+  list-style: none;
 }
 
 .home {
@@ -88,7 +92,7 @@ a {
     transform: translateY(0);
   }
 }
-ul {
+.nav-list {
   margin-top: 120px;
 
   @include pc {
@@ -97,7 +101,7 @@ ul {
     margin-left: auto;
   }
 
-  li {
+  .nav-item {
     list-style: none;
     text-align: center;
     margin-bottom: 30px;
