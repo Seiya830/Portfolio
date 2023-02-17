@@ -2,6 +2,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import { RouterView } from "vue-router";
+import "devicon";
 </script>
 
 <template>
