@@ -115,10 +115,11 @@ ul {
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 8px;
-    padding: 6px;
+    padding: 6px 14px;
     display: inline-block;
-    border: solid 2px #c8d1d9;
+    border: solid 2px #363b41;
     border-radius: 10px;
+    background-color: #21262c;
   }
 
   li {
