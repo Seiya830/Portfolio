@@ -2,7 +2,6 @@
 
 <template>
   <section class="about">
-    <h2>ここはaboutページです</h2>
     <div class="profile">
       <h2 class="about-heading">Profile</h2>
       <div class="image">
@@ -13,32 +12,25 @@
     </div>
     <div class="skills">
       <h2 class="about-heading">Skills</h2>
-      <div class="skills-items">
-        <img
-          src="../assets/image/icon/kisspng-logo-cascading-style-sheets-html5-css3-prags-h-python-stickers-5b5ed262588918.5038573515329408983627.png"
-          alt="HTML,CSSのアイコン"
-          class="skills-icon-markup"
-        />
+      <div class="skills-item">
+        <i class="devicon-html5-plain-wordmark icon"></i>
+
+        <i class="devicon-css3-plain-wordmark icon"></i>
+
         <p>
           静的なWebサイトを作成し、レスポンシブ対応することができます。<br />Sassを使用し、メンテナンス性を高めたコーディングをすることが可能です。
         </p>
       </div>
-      <div class="skills-items">
-        <img
-          src="../assets/image/icon/kisspng-javascript-scalable-vector-graphics-logo-encapsula-javascript-le-ekran-grnts-almak-alpere-5b6dbeb4be0349.4316196815339189007783.png"
-          alt="JavaScriptのアイコン"
-          class="skills-icon"
-        />
+      <div class="skills-item">
+        <i class="devicon-javascript-plain icon"></i>
+
         <p>
-          フェードインや要素の表示、非表示の切り替え等基本的なアニメーションの実装ができます。
+          フェードインや要素の表示、非表示の切り替え等基本的なアニメーションの実装ができます。<br />jQueryでの記述も可能です。
         </p>
       </div>
-      <div class="skills-items">
-        <img
-          src="../assets/image/icon/kisspng-vue-js-javascript-library-angularjs-react-vue-js-5b4ebe1c091993.8950282915318871320373.png"
-          alt="Vue.jsのアイコン"
-          class="skills-icon"
-        />
+      <div class="skills-item">
+        <i class="devicon-vuejs-plain icon"></i>
+
         <p>
           Vite, Composition API,
           TypeScriptを使用し、簡単なSPAを作ることができます。
@@ -50,14 +42,12 @@
       <h2 class="about-heading">Like</h2>
       <div class="like-items">
         <p>Hobby</p>
-        <ul>
+        <ul class="like-list">
           <li>ウエイトトレーニング</li>
           <li>FPSゲーム</li>
           <li>塊根植物</li>
           <li>サウナ</li>
         </ul>
-      </div>
-      <div class="like-items">
         <p>Food</p>
         <ul>
           <li>パキスタンカレー</li>
@@ -76,11 +66,26 @@ ul {
 
 .about-heading {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.skills-items {
+.skills-item {
   margin-right: 10%;
   margin-left: 10%;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #161b22;
+  border-radius: 10px;
+
+  .icon {
+    font-size: 100px;
+    color: #c8d1d9;
+  }
+
+  p {
+    margin-top: 12px;
+    color: #c8d1d9;
+  }
 }
 
 .skills-icon-markup {
@@ -91,5 +96,33 @@ ul {
 .skills-icon {
   width: 30%;
   height: 30%;
+}
+
+.like-items {
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #161b22;
+  border-radius: 10px;
+
+  .like-list {
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: #c8d1d9;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    padding: 6px;
+    display: inline-block;
+    border: solid 2px #c8d1d9;
+    border-radius: 10px;
+  }
+
+  li {
+    color: #c8d1d9;
+  }
 }
 </style>
