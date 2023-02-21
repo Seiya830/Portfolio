@@ -119,8 +119,8 @@ li {
   top: 0;
   right: 0;
   display: inline-block;
-  width: 75px;
-  height: 75px;
+  width: 64px;
+  height: 64px;
   background-color: gray;
   vertical-align: top;
   border: none;
@@ -133,8 +133,8 @@ li {
 
   span {
     position: absolute;
-    top: 20px;
-    left: 18px;
+    top: 18px;
+    left: 16px;
     display: inline-block;
     width: 35px;
     height: 2px;
