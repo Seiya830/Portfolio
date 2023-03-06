@@ -1,16 +1,37 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+    };
+  },
+
+  methods: {
+    submitForm() {
+      // フォームの送信処理を実装する
+    },
+  },
+});
+</script>
 
 <template>
   <div class="contact">
     <h1>Contact</h1>
 
-    <form action="./contactform.php" method="post">
+    <form @submit.prevent="submitForm">
       <label for="name">氏名</label>
-      <input type="text" name="fullname" value="" />
+      <input type="text" v-model="name" />
+
       <label for="email">メールアドレス</label>
-      <input type="email" name="email" value="" />
+      <input type="email" v-model="email" />
+
       <label for="content">本文</label>
-      <textarea name="message" id="" cols="" rows=""></textarea>
+      <textarea v-model="message"></textarea>
+
       <input type="submit" name="confirm" value="確認" class="button" />
     </form>
   </div>
@@ -39,12 +60,11 @@
     input[type="email"],
     textarea {
       margin-bottom: 20px;
-      padding: 4px 20px;
+      padding: 4px;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 16px;
-      width: 100%;
-      max-width: 400px;
+      width: 280px;
     }
 
     textarea {
