@@ -3,6 +3,8 @@ import AboutView from '../views/AboutView.vue'
 import HomeView from '../views/HomeView.vue'
 import WorksView from '../views/WorksView.vue'
 import ContactView from '../views/ContactView.vue'
+import ContactConfirm from '../components/ContactConfirm.vue'
+import ContactComplete from '../components/ContactComplete.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,7 +31,18 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: ContactView
-    }
+    },
+    {
+      path: '../components/ContactConfirm.vue',
+      name: 'contact-form-confirm',
+      component: ContactConfirm,
+      props: true,
+    },
+    {
+      path: '../components/ContactComplete.vue',
+      name: 'contact-form-complete',
+      component: ContactComplete,
+    },
   ]
 })
 
