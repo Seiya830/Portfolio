@@ -14,6 +14,9 @@ export default defineComponent({
 
     const submitForm = () => {
       // フォームの送信処理を実装する
+
+      // 完了画面へ偏移
+      router.push("/components/ContactComplete");
     };
 
     const goBack = () => {
