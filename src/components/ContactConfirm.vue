@@ -75,5 +75,9 @@ export default defineComponent({
       background-color: #0069d9;
     }
   }
+
+  button + button {
+    margin-left: 14px;
+  }
 }
 </style>
