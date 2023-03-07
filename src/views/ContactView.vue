@@ -12,7 +12,18 @@ export default defineComponent({
 
   methods: {
     submitForm() {
-      // フォームの送信処理を実装する
+      // フォームデータをオブジェクトとしてまとめる
+      const formData = {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      };
+
+      // 確認画面へ遷移
+      this.$router.push({
+        name: "contact-form-confirm",
+        params: formData,
+      });
     },
   },
 });
