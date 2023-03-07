@@ -33,13 +33,13 @@ const router = createRouter({
       component: ContactView
     },
     {
-      path: '../components/ContactConfirm.vue',
+      path: '/components/ContactConfirm.vue',
       name: 'contact-form-confirm',
       component: ContactConfirm,
       props: true,
     },
     {
-      path: '../components/ContactComplete.vue',
+      path: '/components/ContactComplete.vue',
       name: 'contact-form-complete',
       component: ContactComplete,
     },
