@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   props: {
@@ -8,10 +9,21 @@ export default defineComponent({
     message: String,
   },
 
-  methods: {
-    submitForm() {
+  setup() {
+    const router = useRouter();
+
+    const submitForm = () => {
       // フォームの送信処理を実装する
-    },
+    };
+
+    const goBack = () => {
+      router.push("/contact");
+    };
+
+    return {
+      submitForm,
+      goBack,
+    };
   },
 });
 </script>
@@ -27,6 +39,7 @@ export default defineComponent({
     </ul>
 
     <button @click="submitForm">送信</button>
+    <button @click="goBack">戻る</button>
   </div>
 </template>
 
