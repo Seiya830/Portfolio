@@ -1,22 +1,49 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
+import axios from "axios";
 
 export default defineComponent({
   props: {
-    name: String,
-    email: String,
-    message: String,
+    name: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+    },
+    message: {
+      type: String,
+      required: true,
+    },
   },
 
   setup() {
     const router = useRouter();
 
-    const submitForm = () => {
-      // フォームの送信処理を実装する
+    const submitForm = async ({
+      name,
+      email,
+      message,
+    }: {
+      name: string;
+      email: string;
+      message: string;
+    }) => {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("message", message);
 
-      // 完了画面へ偏移
-      router.push("/components/ContactComplete");
+      try {
+        await axios.post("/server.js", formData);
+        alert("メールが正常に送信されました");
+        router.push("/components/ContactComplete");
+      } catch (error) {
+        console.error(error);
+        alert("メールの送信中にエラーが発生しました");
+      }
     };
 
     const goBack = () => {
@@ -41,7 +68,7 @@ export default defineComponent({
       <li>メッセージ: {{ message }}</li>
     </ul>
 
-    <button @click="submitForm">送信</button>
+    <button @click="submitForm({ name, email, message })">送信</button>
     <button @click="goBack">戻る</button>
   </div>
 </template>
