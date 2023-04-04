@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   data() {
@@ -12,16 +13,16 @@ export default defineComponent({
 
   methods: {
     submitForm() {
-      // フォームデータをオブジェクトとしてまとめる
       const formData = {
         name: this.name,
         email: this.email,
         message: this.message,
       };
 
-      // 確認画面へ遷移
-      this.$router.push({
-        name: "contact-form-confirm",
+      const router = useRouter();
+      router.push({
+        name: "ContactComplete",
+        path: "/components/ContactComplete",
         params: formData,
       });
     },
@@ -33,17 +34,19 @@ export default defineComponent({
   <div class="contact">
     <h1>Contact</h1>
 
-    <form @submit.prevent="submitForm">
+    <form
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXPQO7WPWUxyoh_8Ur4qIKe8oCHIfB4p_d35gePI8HSLUbuA/formResponse"
+    >
       <label for="name">氏名</label>
-      <input type="text" v-model="name" />
+      <input type="text" name="entry.2005620554" />
 
       <label for="email">メールアドレス</label>
-      <input type="email" v-model="email" />
+      <input type="email" name="entry.1045781291" />
 
       <label for="content">本文</label>
-      <textarea v-model="message"></textarea>
+      <textarea name="entry.839337160"></textarea>
 
-      <input type="submit" name="confirm" value="確認" class="button" />
+      <input type="submit" name="confirm" value="送信" class="button" />
     </form>
   </div>
 </template>
