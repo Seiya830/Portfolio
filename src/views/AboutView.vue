@@ -5,11 +5,13 @@
     <div class="profile">
       <h2 class="about-heading">Profile</h2>
       <div class="image">
-        <img src="" alt="プロフィール画像" />
+        <img src="../assets/img/my_picture.jpg" alt="プロフィール画像" />
       </div>
       <p>
-        札幌市在住の大森誠也です。<br />鍼灸師として働きながらフロントエンドエンジニアを目指して学習中です。<br />業務の性質上、目の前の1人にしか影響を与えることができませんが、0から物を作り多くの人へ価値の提供ができるエンジニアに魅力を感じプログラミング学習を開始しました。
-        <br />学習を始めたての頃、教材のBootstrapのコードが動かず、公式ドキュメントを参照するとコードに変更があり、たった数年で変化することが今の自分の業界では考えられず衝撃を受け、さらにプログラミングに惹かれました。<br />特に変化が激しいと言われているフロントエンドの分野に興味があり、Vue.jsやNuxt.jsを学習中です。
+        札幌市在住の大森誠也です。<br />鍼灸師として働きながらフロントエンドエンジニアを目指して学習中です。<br />鍼灸師の業務の性質上、目の前の1人にしか影響を与えることができませんが、0から物を作り多くの人へ価値の提供ができるエンジニアに魅力を感じプログラミング学習を開始しました。
+        <br />学習を始めたての頃、教材のBootstrapのコードが動かず公式ドキュメントを参照するとコードに変更がありました。たった数年で変化することが今の自分の業界では考えられず衝撃を受け、さらにプログラミングに惹かれました。<br />特に変化が激しいと言われているフロントエンドの分野に興味があり、Vue.jsやNuxt.jsを学習中です。<br />日々技術をを学ぶ上で、多くのエラーに直面していますが、
+        何が悪いのか突き止め解決策を見い出すことに楽しさを感じています。
+        複雑で馴染みのない問題に直面した時には最もやりがいを感じます。
       </p>
     </div>
     <div class="skills">
@@ -66,38 +68,68 @@ ul {
   padding-left: 10px;
 }
 
+.about {
+  background-color: #161b22;
+}
+
 .about-heading {
   text-align: center;
   margin-bottom: 30px;
+  color: #c8d1d9;
 }
 
-.skills-item {
+.profile {
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
-  background-color: #161b22;
   border-radius: 10px;
+  border: 2px solid #c8d1d9;
 
-  .icon {
-    font-size: 100px;
-    color: #c8d1d9;
+  .image {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   p {
-    margin-top: 12px;
+    margin-bottom: 40px;
     color: #c8d1d9;
   }
 }
 
-.skills-icon-markup {
-  width: 30%;
-  height: 20%;
-}
+.skills {
+  background-color: #161b22;
 
-.skills-icon {
-  width: 30%;
-  height: 30%;
+  .skills-item {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #c8d1d9;
+
+    .icon {
+      font-size: 100px;
+      color: #c8d1d9;
+    }
+
+    p {
+      margin-top: 12px;
+      color: #c8d1d9;
+    }
+  }
+
+  .skills-icon-markup {
+    width: 30%;
+    height: 20%;
+  }
+
+  .skills-icon {
+    width: 30%;
+    height: 30%;
+  }
 }
 
 .like-items {
@@ -105,8 +137,8 @@ ul {
   margin-left: 10%;
   margin-bottom: 40px;
   padding: 20px;
-  background-color: #161b22;
   border-radius: 10px;
+  border: 2px solid #c8d1d9;
 
   .like-list {
     margin-bottom: 30px;
