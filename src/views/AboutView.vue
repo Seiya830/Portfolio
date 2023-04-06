@@ -81,6 +81,7 @@ ul {
 .profile {
   margin-right: 10%;
   margin-left: 10%;
+  margin-bottom: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -100,15 +101,16 @@ ul {
 }
 
 .skills {
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 60px;
   background-color: #161b22;
+  border: 2px solid #c8d1d9;
+  padding: 20px;
+  border-radius: 10px;
 
   .skills-item {
-    margin-right: 10%;
-    margin-left: 10%;
     margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #c8d1d9;
 
     .icon {
       font-size: 100px;
@@ -132,13 +134,16 @@ ul {
   }
 }
 
-.like-items {
+.like {
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #c8d1d9;
+}
+
+.like-items {
+  margin-bottom: 40px;
 
   .like-list {
     margin-bottom: 30px;
