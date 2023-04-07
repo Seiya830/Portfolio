@@ -58,6 +58,10 @@ li {
   width: auto;
   height: auto;
 
+  a {
+    color: #c8d1d9;
+  }
+
   @include pc {
     z-index: 9999;
   }
@@ -121,7 +125,7 @@ li {
   display: inline-block;
   width: 64px;
   height: 64px;
-  background-color: gray;
+  background-color: #161b22;
   vertical-align: top;
   border: none;
   z-index: 9999;
@@ -138,7 +142,7 @@ li {
     display: inline-block;
     width: 35px;
     height: 2px;
-    background-color: black;
+    background-color: #c8d1d9;
     transition: ease 0.4s;
   }
 
