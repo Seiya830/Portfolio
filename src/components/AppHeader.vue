@@ -44,7 +44,7 @@ export default defineComponent({
 
 a {
   text-decoration: none;
-  color: black;
+  color: #c8d1d9;
 }
 
 li {
@@ -73,7 +73,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  background-color: #21262c;
   z-index: 999;
   display: none;
 
@@ -157,7 +157,7 @@ li {
   }
 
   &.open {
-    background-color: aqua;
+    background-color: #21262c;
 
     span {
       &:nth-child(1) {
