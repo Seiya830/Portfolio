@@ -4,7 +4,7 @@
       <a href="https://seiya830.github.io/sauna-quiz/" target="_blank">
         <img
           class="works__thumbnail"
-          src="https://placehold.jp/300x300.png"
+          src="../assets/img/sauna-quiz.png"
           alt="サウナクイズ"
         />
         <div class="works__description">
@@ -19,7 +19,7 @@
       <a href="https://seiya830.github.io/english-school/" target="_blank">
         <img
           class="works__thumbnail"
-          src="https://placehold.jp/300x300.png"
+          src="../assets/img/english-school.png"
           alt="架空英会話教室サイト"
         />
         <div class="works__description">
@@ -34,7 +34,7 @@
       <a href="https://seiya830.github.io/vue_janken/" target="_blank">
         <img
           class="works__thumbnail"
-          src="https://placehold.jp/300x300.png"
+          src="../assets/img/vue-janken.png"
           alt="Vue3じゃんけんゲーム"
         />
         <div class="works__description">
@@ -49,7 +49,7 @@
       <a href="https://seiya830.github.io/M-Test/" target="_blank">
         <img
           class="works__thumbnail"
-          src="https://placehold.jp/300x300.png"
+          src="../assets/img/m-test.png"
           alt="Mテスト"
         />
         <div class="works__description">
@@ -82,6 +82,7 @@
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .works__description {
