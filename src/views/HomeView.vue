@@ -9,20 +9,26 @@
 
 <style lang="scss">
 .top-title {
-  height: 400px;
-  font-size: 38px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
 
-  .home-text {
-    position: absolute;
-    top: 70%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 50%;
-    height: 250px;
-    text-align: center;
-  }
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
 }
 </style>
