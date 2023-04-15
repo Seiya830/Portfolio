@@ -58,7 +58,6 @@
         </ul>
       </div>
     </div>
-    <router-link to="/">Homeへ</router-link>
   </section>
 </template>
 
