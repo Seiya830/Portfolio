@@ -12,6 +12,11 @@
           <p class="works__text">
             4択クイズ形式でサウナに関する問題を出題するWebアプリケーションです。
           </p>
+          <span class="works__github">
+            <a href="https://github.com/Seiya830/sauna-quiz" target="_blank"
+              ><i class="devicon-github-original"></i
+            ></a>
+          </span>
         </div>
       </a>
     </div>
@@ -23,10 +28,15 @@
           alt="架空英会話教室サイト"
         />
         <div class="works__description">
-          <h3 class="works__title">架空英会話教室サイト</h3>
+          <h3 class="works__title">英会話教室サイト</h3>
           <p class="works__text">
             架空の英会話教室のウェブサイトを模した作品です。
           </p>
+          <span class="works__github">
+            <a href="https://github.com/Seiya830/english-school" target="_blank"
+              ><i class="devicon-github-original"></i
+            ></a>
+          </span>
         </div>
       </a>
     </div>
@@ -42,6 +52,11 @@
           <p class="works__text">
             Vue3で作成したじゃんけんゲームです。人間とコンピュータの対戦ができます。
           </p>
+          <span class="works__github">
+            <a href="https://github.com/Seiya830/vue_janken" target="_blank"
+              ><i class="devicon-github-original"></i
+            ></a>
+          </span>
         </div>
       </a>
     </div>
@@ -57,6 +72,11 @@
           <p class="works__text">
             鍼灸師の治療法の1つとして使われているものを診断テスト形式で作成しました。
           </p>
+          <span class="works__github">
+            <a href="https://github.com/Seiya830/M-Test" target="_blank"
+              ><i class="devicon-github-original"></i
+            ></a>
+          </span>
         </div>
       </a>
     </div>
@@ -96,6 +116,12 @@
   color: #fff;
   transition: all 0.3s ease;
   transform: translateY(100%);
+  display: flex;
+
+  .devicon-github-original {
+    font-size: 3rem;
+    margin: auto;
+  }
 }
 
 .works__item:hover .works__description {
