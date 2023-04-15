@@ -84,6 +84,8 @@
 </template>
 
 <style lang="scss">
+@import "../assets/scss/mixin";
+
 .works {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -115,8 +117,10 @@
   box-sizing: border-box;
   color: #fff;
   transition: all 0.3s ease;
-  transform: translateY(100%);
   display: flex;
+  @include pc {
+    transform: translateY(100%);
+  }
 
   .devicon-github-original {
     font-size: 3rem;
