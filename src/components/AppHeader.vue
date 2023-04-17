@@ -68,7 +68,7 @@ li {
 }
 
 .nav-content {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -119,9 +119,9 @@ li {
 }
 
 .hamburger {
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 8px;
+  right: 18px;
   display: inline-block;
   width: 64px;
   height: 64px;
