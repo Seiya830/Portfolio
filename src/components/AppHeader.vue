@@ -97,7 +97,7 @@ li {
   }
 }
 .nav-list {
-  margin-top: 120px;
+  margin-top: 240px;
 
   @include pc {
     display: flex;
@@ -108,7 +108,8 @@ li {
   .nav-item {
     list-style: none;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 82px;
+    font-size: 1.5rem;
 
     @include pc {
       margin-top: 30px;
