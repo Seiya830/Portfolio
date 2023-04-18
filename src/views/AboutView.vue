@@ -77,6 +77,7 @@ ul {
 }
 
 .profile {
+  margin-top: 10%;
   margin-right: 10%;
   margin-left: 10%;
   margin-bottom: 60px;
@@ -93,7 +94,6 @@ ul {
   }
 
   p {
-    margin-bottom: 40px;
     color: #c8d1d9;
   }
 }
@@ -135,14 +135,13 @@ ul {
 .like {
   margin-right: 10%;
   margin-left: 10%;
+  margin-bottom: 10%;
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #c8d1d9;
 }
 
 .like-items {
-  margin-bottom: 40px;
-
   .like-list {
     margin-bottom: 30px;
   }
