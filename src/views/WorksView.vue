@@ -90,7 +90,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .works__item {
