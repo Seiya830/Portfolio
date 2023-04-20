@@ -4,64 +4,70 @@
   <section class="about">
     <div class="profile">
       <h2 class="about-heading">Profile</h2>
-      <div class="image">
-        <img src="../assets/img/my_picture.jpg" alt="プロフィール画像" />
-      </div>
-      <p>
-        はじめまして、札幌市在住の大森誠也と申します。<br />鍼灸師として働きながらフロントエンドエンジニアを目指して学習中です。<br />
-        私は鍼灸師としての仕事にやりがいを感じていますが、一方でその仕事の性質上、一人ひとりにしか直接的な影響を与えることができませんでした。<br />そんな中プログラミングによって多くの人々に価値を提供できるエンジニアの魅力に惹かれ、学習を始めました。
-        <br />学習を始めた当初、教材のBootstrapのコードが動かず公式ドキュメントを参照するとコードに変更がありました。たった数年で変化することが今の自分の業界では考えられず衝撃を受け、さらにプログラミング、コーディングに惹かれました。<br />特に変化が早いと言われているフロントエンドの分野に興味があり、Vue.jsやNuxt.jsを学習中です。<br />日々技術を学ぶ上で、多くのエラーに直面していますが、何が悪いのか突き止め解決策を見い出すことに楽しさを感じています。複雑で馴染みのない問題に直面した時には最もやりがいを感じます。
-      </p>
-    </div>
-    <div class="skills">
-      <h2 class="about-heading">Skills</h2>
-      <div class="skills-item">
-        <i class="devicon-html5-plain-wordmark icon"></i>
-
-        <i class="devicon-css3-plain-wordmark icon"></i>
-
+      <div class="profile-pc">
+        <div class="image">
+          <img src="../assets/img/my_picture.jpg" alt="プロフィール画像" />
+        </div>
         <p>
-          静的なWebサイトを作成し、レスポンシブ対応することができます。<br />Sassを使用し、メンテナンス性を高めたコーディングをすることが可能です。
-        </p>
-      </div>
-      <div class="skills-item">
-        <i class="devicon-javascript-plain icon"></i>
-
-        <p>
-          フェードインや要素の表示、非表示の切り替え等基本的なアニメーションの実装ができます。<br />jQueryでの記述も可能です。
-        </p>
-      </div>
-      <div class="skills-item">
-        <i class="devicon-vuejs-plain icon"></i>
-
-        <p>
-          Vite, Composition API,
-          TypeScriptを使用し、簡単なSPAを作ることができます。
+          はじめまして、札幌市在住の大森誠也と申します。<br />鍼灸師として働きながらフロントエンドエンジニアを目指して学習中です。<br />
+          私は鍼灸師としての仕事にやりがいを感じていますが、一方でその仕事の性質上、一人ひとりにしか直接的な影響を与えることができませんでした。<br />そんな中プログラミングによって多くの人々に価値を提供できるエンジニアの魅力に惹かれ、学習を始めました。
+          <br />学習を始めた当初、教材のBootstrapのコードが動かず公式ドキュメントを参照するとコードに変更がありました。たった数年で変化することが今の自分の業界では考えられず衝撃を受け、さらにプログラミング、コーディングに惹かれました。<br />特に変化が早いと言われているフロントエンドの分野に興味があり、Vue.jsやNuxt.jsを学習中です。<br />日々技術を学ぶ上で、多くのエラーに直面していますが、何が悪いのか突き止め解決策を見い出すことに楽しさを感じています。複雑で馴染みのない問題に直面した時には最もやりがいを感じます。
         </p>
       </div>
     </div>
+    <div class="pc-wrap">
+      <div class="skills">
+        <h2 class="about-heading">Skills</h2>
+        <div class="skills-item">
+          <i class="devicon-html5-plain-wordmark icon"></i>
 
-    <div class="like">
-      <h2 class="about-heading">Like</h2>
-      <div class="like-items">
-        <p>Hobby</p>
-        <ul class="like-list">
-          <li>ウエイトトレーニング</li>
-          <li>FPSゲーム</li>
-          <li>塊根植物</li>
-          <li>サウナ</li>
-        </ul>
-        <p>Food</p>
-        <ul>
-          <li>パキスタンカレー</li>
-          <li>どら焼き</li>
-        </ul>
+          <i class="devicon-css3-plain-wordmark icon"></i>
+
+          <p>
+            静的なWebサイトを作成し、レスポンシブ対応することができます。<br />Sassを使用し、メンテナンス性を高めたコーディングをすることが可能です。
+          </p>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-javascript-plain icon"></i>
+
+          <p>
+            フェードインや要素の表示、非表示の切り替え等基本的なアニメーションの実装ができます。<br />jQueryでの記述も可能です。
+          </p>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-vuejs-plain icon"></i>
+
+          <p>
+            Vite, Composition API,
+            TypeScriptを使用し、簡単なSPAを作ることができます。
+          </p>
+        </div>
+      </div>
+
+      <div class="like">
+        <h2 class="about-heading">Like</h2>
+        <div class="like-items">
+          <p>Hobby</p>
+          <ul class="like-list">
+            <li>ウエイトトレーニング</li>
+            <li>FPSゲーム</li>
+            <li>塊根植物</li>
+            <li>サウナ</li>
+          </ul>
+          <p>Food</p>
+          <ul>
+            <li>パキスタンカレー</li>
+            <li>どら焼き</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style lang="scss">
+@import "../assets/scss/mixin";
+
 ul {
   padding-left: 10px;
 }
@@ -74,6 +80,17 @@ ul {
   text-align: center;
   margin-bottom: 30px;
   color: #c8d1d9;
+  @include pc {
+    margin-top: 30px;
+  }
+}
+
+@include pc {
+  .profile-pc {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 .profile {
@@ -91,10 +108,27 @@ ul {
   .image {
     width: 100%;
     margin-bottom: 50px;
+    @include pc {
+      margin-top: 2%;
+      width: 50%;
+    }
+    img {
+      border-radius: 10px;
+    }
   }
 
   p {
     color: #c8d1d9;
+    @include pc {
+      margin-top: 2%;
+      margin-left: 40px;
+      font-size: 1.2rem;
+    }
+  }
+}
+@include pc {
+  .pc-wrap {
+    display: flex;
   }
 }
 
@@ -106,6 +140,11 @@ ul {
   border: 2px solid #c8d1d9;
   padding: 20px;
   border-radius: 10px;
+
+  @include pc {
+    margin-right: 1%;
+    width: 50%;
+  }
 
   .skills-item {
     margin-bottom: 40px;
@@ -139,6 +178,11 @@ ul {
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #c8d1d9;
+
+  @include pc {
+    margin-left: 1%;
+    width: 50%;
+  }
 }
 
 .like-items {
