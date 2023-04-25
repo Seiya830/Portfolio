@@ -1,52 +1,45 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import { useRouter } from "vue-router";
-
-export default defineComponent({
+<script>
+export default {
   data() {
     return {
       name: "",
       email: "",
-      message: "",
+      content: "",
     };
   },
-
   methods: {
-    submitForm() {
-      const formData = {
-        name: this.name,
-        email: this.email,
-        message: this.message,
-      };
-
-      const router = useRouter();
-      router.push({
-        name: "ContactComplete",
-        path: "/components/ContactComplete",
-        params: formData,
+    async submitForm() {
+      const formId = "1FAIpQLSfXPQO7WPWUxyoh_8Ur4qIKe8oCHIfB4p_d35gePI8HSLUbuA";
+      const formData = new FormData();
+      formData.append("entry.2005620554", this.name);
+      formData.append("entry.1045781291", this.email);
+      formData.append("entry.839337160", this.content);
+      await fetch(`https://docs.google.com/forms/d/e/${formId}/formResponse`, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData,
       });
+      this.$router.push("/ContactComplete");
     },
   },
-});
+};
 </script>
 
 <template>
   <div class="contact">
     <h1>Contact</h1>
 
-    <form
-      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXPQO7WPWUxyoh_8Ur4qIKe8oCHIfB4p_d35gePI8HSLUbuA/formResponse"
-    >
+    <form @submit.prevent="submitForm">
       <label for="name">氏名</label>
-      <input type="text" name="entry.2005620554" />
+      <input type="text" name="entry.2005620554" v-model="name" />
 
       <label for="email">メールアドレス</label>
-      <input type="email" name="entry.1045781291" />
+      <input type="email" name="entry.1045781291" v-model="email" />
 
       <label for="content">本文</label>
-      <textarea name="entry.839337160"></textarea>
+      <textarea name="entry.839337160" v-model="content"></textarea>
 
-      <input type="submit" name="confirm" value="送信" class="button" />
+      <button type="submit" name="button" value="送信">送信</button>
     </form>
   </div>
 </template>
@@ -88,7 +81,7 @@ export default defineComponent({
       min-height: 100px;
     }
 
-    input[type="submit"] {
+    button[type="submit"] {
       background-color: #007bff;
       color: #fff;
       padding: 10px 20px;
