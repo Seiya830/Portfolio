@@ -6,7 +6,9 @@ export default defineComponent({});
 
 <template>
   <div class="complete">
-    <p>お問い合わせありがとうございました。</p>
+    <p>
+      お問い合わせいただき、ありがとうございます。<br />確認の上、ご返信させていただきます。
+    </p>
     <router-link to="/">Homeに戻る</router-link>
   </div>
 </template>
@@ -18,7 +20,8 @@ export default defineComponent({});
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #161b22;
+  color: #c8d1d9;
 
   p {
     font-size: 24px;
@@ -28,14 +31,10 @@ export default defineComponent({});
 
   a {
     font-size: 16px;
-    color: #007bff;
+    color: #c8d1d9;
     text-decoration: underline;
     margin-top: 20px;
     cursor: pointer;
-
-    &:hover {
-      color: #0056b3;
-    }
   }
 }
 </style>
