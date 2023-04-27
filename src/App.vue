@@ -3,6 +3,7 @@ import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import { RouterView } from "vue-router";
 import "devicon";
+
 </script>
 
 <template>
@@ -17,4 +18,19 @@ import "devicon";
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #161b22;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #161b22;
+}
+</style>
