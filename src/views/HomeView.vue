@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #c8d1d9;
 }
 
 h2 {
