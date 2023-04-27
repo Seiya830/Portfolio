@@ -1,5 +1,8 @@
 <template>
-  <p>Seiya's Portfolio by <a href="">@seiya30_jp</a></p>
+  <p>
+    Seiya's Portfolio by
+    <a href="https://twitter.com/seiya30_jp">@seiya30_jp</a>
+  </p>
 </template>
 
 <style lang="scss">
@@ -7,14 +10,14 @@
 
 footer {
   width: 100%;
-  background-color: black;
+  background-color: #161b22;
 
   p {
     text-align: center;
-    color: white;
+    color: #c8d1d9;
 
     a {
-      color: white;
+      color: #c8d1d9;
     }
   }
 }
