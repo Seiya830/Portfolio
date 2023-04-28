@@ -86,6 +86,7 @@ ul {
   text-align: center;
   margin-bottom: 30px;
   color: #c8d1d9;
+  font-size: 3rem;
   @include pc {
     margin-top: 30px;
   }
@@ -125,10 +126,11 @@ ul {
 
   p {
     color: #c8d1d9;
+    font-size: 1.5rem;
     @include pc {
       margin-top: 2%;
       margin-left: 40px;
-      font-size: 1.2rem;
+      font-size: 1.9rem;
     }
   }
 }
@@ -163,6 +165,7 @@ ul {
     p {
       margin-top: 12px;
       color: #c8d1d9;
+      font-size: 1.5rem;
     }
   }
 
@@ -199,7 +202,7 @@ ul {
 
   p {
     color: #c8d1d9;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 900;
     margin-bottom: 8px;
     padding: 6px 14px;
@@ -211,6 +214,7 @@ ul {
 
   li {
     color: #c8d1d9;
+    font-size: 1.5rem;
   }
 }
 </style>

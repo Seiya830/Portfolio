@@ -25,11 +25,11 @@
 
 h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h3 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 </style>

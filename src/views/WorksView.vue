@@ -123,7 +123,7 @@
   }
 
   .devicon-github-original {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: auto;
   }
 }
@@ -135,12 +135,13 @@
 .works__title {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .works__text {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.5rem;
 }
 </style>

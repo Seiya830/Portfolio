@@ -45,6 +45,7 @@ export default defineComponent({
 a {
   text-decoration: none;
   color: #c8d1d9;
+  font-size: 2.5rem;
 }
 
 li {
@@ -52,8 +53,8 @@ li {
 }
 
 .home {
-  margin-top: 16px;
-  margin-left: 24px;
+  margin-top: 30px;
+  margin-left: 30px;
   display: inline-block;
   width: auto;
   height: auto;
@@ -109,7 +110,6 @@ li {
     list-style: none;
     text-align: center;
     margin-bottom: 82px;
-    font-size: 1.5rem;
 
     @include pc {
       margin-top: 30px;
