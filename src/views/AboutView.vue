@@ -55,9 +55,15 @@
             <li>サウナ</li>
           </ul>
           <p>Food</p>
-          <ul>
+          <ul class="like-list">
             <li>パキスタンカレー</li>
             <li>どら焼き</li>
+          </ul>
+          <p>Tech</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+            <li>Nuxt.js</li>
           </ul>
         </div>
       </div>
@@ -143,7 +149,7 @@ ul {
 
   @include pc {
     margin-right: 1%;
-    width: 50%;
+    width: 90%;
   }
 
   .skills-item {
@@ -181,13 +187,14 @@ ul {
 
   @include pc {
     margin-left: 1%;
-    width: 50%;
+    margin-bottom: 60px;
+    width: 40%;
   }
 }
 
 .like-items {
   .like-list {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   p {
