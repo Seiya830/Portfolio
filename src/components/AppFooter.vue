@@ -15,9 +15,11 @@ footer {
   p {
     text-align: center;
     color: #c8d1d9;
+    font-size: 1.5rem;
 
     a {
       color: #c8d1d9;
+      font-size: 1.5rem;
     }
   }
 }

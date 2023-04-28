@@ -24,13 +24,13 @@ export default defineComponent({});
   color: #c8d1d9;
 
   p {
-    font-size: 24px;
+    font-size: 2.4rem;
     margin: 20px;
     text-align: center;
   }
 
   a {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #c8d1d9;
     text-decoration: underline;
     margin-top: 20px;

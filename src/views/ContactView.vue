@@ -53,6 +53,10 @@ export default {
   height: 100vh;
   color: #c8d1d9;
 
+  h1 {
+    font-size: 3rem;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -62,6 +66,7 @@ export default {
     label {
       display: block;
       margin: 10px 0;
+      font-size: 1.5rem;
     }
 
     input[type="text"],
@@ -71,7 +76,7 @@ export default {
       padding: 4px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      font-size: 16px;
+      font-size: 1.6rem;
       width: 280px;
     }
 
@@ -87,7 +92,7 @@ export default {
       padding: 10px 20px;
       border: none;
       border-radius: 4px;
-      font-size: 16px;
+      font-size: 1.6rem;
       cursor: pointer;
     }
   }
