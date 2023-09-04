@@ -1,6 +1,26 @@
 <template>
   <div class="works">
     <div class="works__item">
+      <a href="https://green-care.vercel.app/" target="_blank">
+        <img
+          class="works__thumbnail"
+          src="../assets/img/GreenCare.png"
+          alt="水やり管理アプリ"
+        />
+        <div class="works__description">
+          <h3 class="works__title">水やり管理アプリ</h3>
+          <p class="works__text">
+            Nuxt3,MySQL,Prismaを使用して最後に植物に水やりをした日を登録するメモ機能付きアプリケーションです。
+          </p>
+          <span class="works__github">
+            <a href="https://github.com/Seiya830/GreenCare" target="_blank"
+              ><i class="devicon-github-original"></i
+            ></a>
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="works__item">
       <a href="https://seiya830.github.io/sauna-quiz/" target="_blank">
         <img
           class="works__thumbnail"
