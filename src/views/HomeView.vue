@@ -1,8 +1,35 @@
+<script>
+import gsap from "gsap";
+
+export default {
+  mounted() {
+    this.animateText();
+  },
+  methods: {
+    animateText() {
+      const textName = document.querySelector("#text-name");
+      const textNameAnimation = gsap.from(textName, {
+        opacity: 0,
+        x: -70,
+        duration: 2,
+      });
+
+      const textTitle = document.querySelector("#text-title");
+      const textTitleAnimation = gsap.from(textTitle, {
+        opacity: 0,
+        x: 70,
+        duration: 2,
+      });
+    },
+  },
+};
+</script>
+
 <template>
   <div class="top-title">
     <div class="home-text">
-      <h2>SEIYA OMORI</h2>
-      <h3>Portfolio</h3>
+      <h2 id="text-name">SEIYA OMORI</h2>
+      <h3 id="text-title">Portfolio</h3>
     </div>
   </div>
 </template>
